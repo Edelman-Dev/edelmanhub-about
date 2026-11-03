@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edelman Hub Privacy Policy | Edelman, LLC</title>
+<meta name="description" content="How Edelman Hub collects, uses, stores, shares and deletes information. Effective November 3, 2026.">
+<link rel="canonical" href="https://about.edelmanhub.com/privacy/">
+<style>
+/* ==========================================================================
+   Edelman Hub — legal pages: About, Privacy Policy, Terms (2 of 3: styles)
+   Same file on all three pages. Scoped under #ehLegalPage.
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&display=swap");
+html, body { margin: 0; background: #F5F3EE; }
+#ehLegalPage {
+  --ink: #1C1B19; --char: #2B2A27; --char-2: #36342F; --line-dark: #4A4740;
+  --stone: #F5F3EE; --card: #FFFFFF; --line: #E7E3DA; --muted: #6B665E;
+  --on-dark: #FFFFFF; --on-dark-2: #D8D4CB; --yellow: #FFF200; --yellow-hover: #E6DA00;
+  max-width: 980px; margin: 0 auto; padding: 32px 32px 64px;
+  display: flex; flex-direction: column; gap: 18px;
+  font-family: "Lato", Arial, sans-serif; color: #2E2C29; font-size: 16px; line-height: 1.65;
+}
+#ehLegalPage *, #ehLegalPage *::before, #ehLegalPage *::after { box-sizing: border-box; }
+#ehLegalPage h1, #ehLegalPage h2, #ehLegalPage h3, #ehLegalPage p, #ehLegalPage ul { margin: 0; }
+#ehLegalPage .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+#ehLegalPage a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+#ehLegalPage a:hover { color: #000000; }
+#ehLegalPage a:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; border-radius: 4px; }
+/* Title band */
+#ehLegalPage .lg-head { background: var(--char); border-radius: 16px; padding: 28px 30px; }
+#ehLegalPage .lg-eyebrow { font-size: 13px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--yellow); }
+#ehLegalPage .lg-title { margin-top: 6px; font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif; font-weight: 400; font-size: 56px; line-height: 1; letter-spacing: 1px; color: var(--on-dark); }
+#ehLegalPage .lg-sub { margin-top: 10px; font-size: 17px; line-height: 1.5; color: var(--on-dark-2); max-width: 720px; }
+#ehLegalPage .lg-divider { margin-top: 16px; width: 72px; height: 4px; border-radius: 2px; background: var(--yellow); }
+/* Contents */
+#ehLegalPage .lg-toc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; }
+#ehLegalPage .lg-toc-title { font-size: 12px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+#ehLegalPage .lg-toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 32px; }
+#ehLegalPage .lg-toc li { break-inside: avoid; padding: 3px 0; }
+#ehLegalPage .lg-toc a { font-weight: 700; }
+/* Cards */
+#ehLegalPage .lg-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px 26px; display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 90px; }
+#ehLegalPage .lg-h2 { font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif; font-weight: 400; font-size: 30px; line-height: 1.05; letter-spacing: 1px; color: var(--ink); }
+#ehLegalPage .lg-h3 { margin-top: 6px; font-size: 16px; font-weight: 900; color: var(--ink); }
+#ehLegalPage .lg-list { padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+#ehLegalPage .lg-list b, #ehLegalPage .lg-card p b { color: var(--ink); }
+#ehLegalPage .lg-address { font-style: normal; line-height: 1.6; }
+/* The YouTube / Google section stands out (dark card) */
+#ehLegalPage .lg-card-dark { background: var(--char); border-color: var(--char); color: var(--on-dark-2); }
+#ehLegalPage .lg-card-dark .lg-h2, #ehLegalPage .lg-card-dark .lg-h3, #ehLegalPage .lg-card-dark b { color: var(--on-dark); }
+#ehLegalPage .lg-card-dark a { color: var(--yellow); }
+#ehLegalPage .lg-card-dark a:hover { color: var(--yellow-hover); }
+#ehLegalPage .lg-card-dark a:focus-visible { outline-color: var(--yellow); }
+/* Buttons (light cards only: no yellow here) */
+#ehLegalPage .lg-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+#ehLegalPage .lg-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border-radius: 12px; font-weight: 900; font-size: 15px; text-decoration: none; }
+#ehLegalPage .lg-btn-dark { background: var(--ink); color: #FFFFFF; }
+#ehLegalPage .lg-btn-dark:hover { background: var(--char); color: #FFFFFF; }
+#ehLegalPage .lg-btn-line { background: var(--card); color: var(--ink); border: 1.5px solid var(--ink); }
+#ehLegalPage .lg-btn-line:hover { background: var(--stone); color: var(--ink); }
+/* Footer */
+#ehLegalPage .lg-foot { margin-top: 6px; padding: 18px 4px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; font-size: 14px; color: var(--muted); }
+#ehLegalPage .lg-foot nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+@media (max-width: 767px) {
+  #ehLegalPage { padding: 16px 14px 48px; gap: 14px; font-size: 16px; }
+  #ehLegalPage .lg-head { padding: 20px; }
+  #ehLegalPage .lg-title { font-size: 42px; }
+  #ehLegalPage .lg-card { padding: 18px; }
+  #ehLegalPage .lg-h2 { font-size: 26px; }
+  #ehLegalPage .lg-toc ol { columns: 1; }
+  #ehLegalPage .lg-btn { width: 100%; }
+}
+@media print {
+  #ehLegalPage .lg-card-dark { background: #FFFFFF; color: #2E2C29; border-color: #CCCCCC; }
+  #ehLegalPage .lg-card-dark .lg-h2, #ehLegalPage .lg-card-dark .lg-h3, #ehLegalPage .lg-card-dark b, #ehLegalPage .lg-card-dark a { color: #000000; }
+}
+
+</style>
+</head>
+<body>
+<main>
+<div id="ehLegalPage" class="eh-main">
+<header class="lg-head"><p class="lg-eyebrow">Edelman Hub</p><h1 class="lg-title">Privacy Policy</h1><p class="lg-sub">How Edelman Hub collects, uses, stores, shares and deletes information. Effective November 3, 2026.</p><div class="lg-divider" aria-hidden="true"></div></header>
+<nav class="lg-toc" aria-labelledby="lgToc"><p class="lg-toc-title" id="lgToc">Contents</p><ol><li><a href="#lgP1">Who we are</a></li><li><a href="#lgP2">Who uses the Hub</a></li><li><a href="#lgP3">Information from employees</a></li><li><a href="#lgP4">YouTube and Google data</a></li><li><a href="#lgP5">How we use information</a></li><li><a href="#lgP6">Who we share it with</a></li><li><a href="#lgP7">Cookies and your device</a></li><li><a href="#lgP8">Keeping and deleting information</a></li><li><a href="#lgP9">Security</a></li><li><a href="#lgP10">Your choices</a></li><li><a href="#lgP11">Children</a></li><li><a href="#lgP12">Changes</a></li><li><a href="#lgP13">Contact us</a></li></ol></nav>
+
+<section class="lg-card" aria-labelledby="lgP1"><h2 class="lg-h2" id="lgP1">1. Who we are</h2>
+<p>Edelman Hub (www.edelmanhub.com) is a private website run by Edelman, LLC (doing business as Edelman Heating, Cooling, Plumbing, Electric and Solar), 300 S Calhoun Street, Fairbury, IL 61739 (&ldquo;Edelman,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;). This policy covers Edelman Hub, including its Training tools and the automations that run them. Our public website and customer services have their own <a href="https://www.edelmanteam.com/privacy-policy" target="_blank" rel="noopener noreferrer">customer privacy policy<span class="visually-hidden"> (opens in a new tab)</span></a>.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP2"><h2 class="lg-h2" id="lgP2">2. Who uses the Hub</h2>
+<p>Edelman Hub is for Edelman employees. You sign in with your Edelman Microsoft 365 work account. The Hub is not open to the public, and it is not meant for customers or for children.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP3"><h2 class="lg-h2" id="lgP3">3. Information we collect from employees</h2>
+<ul class="lg-list">
+<li><b>Your work profile</b> from Microsoft 365 when you sign in: name, work email, job title, department and work groups. We use it to show you the right tools and training.</li>
+<li><b>What you do in the Hub:</b> training progress and quiz scores, points earned and rewards ordered, forms you send (including any photos you attach), your Topic of the Week vote, and when you last visited.</li>
+<li><b>Edelman Chat questions.</b> Questions are kept without your name so we can see what the assistant could not answer and improve it.</li>
+<li><b>Technical information</b> your browser sends, such as sign-in and security cookies (see section 7).</li>
+</ul></section>
+
+<section class="lg-card lg-card-dark" aria-labelledby="lgP4"><h2 class="lg-h2" id="lgP4">4. YouTube and Google data</h2>
+<p><b>Edelman Hub uses YouTube API Services.</b> Google&rsquo;s handling of data is covered by the <a href="https://www.google.com/policies/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy<span class="visually-hidden"> (opens in a new tab)</span></a>. Using these features means agreeing to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+<h3 class="lg-h3">Whose Google data</h3>
+<p>Only Edelman&rsquo;s own YouTube channel. An authorized Edelman administrator connects the channel once with Google sign-in (OAuth). Employees never sign in with Google. We never ask for, see or store Google passwords.</p>
+<h3 class="lg-h3">What we access</h3>
+<ul class="lg-list">
+<li><b>Video details</b> for videos a manager adds to training: the video ID, title and channel name.</li>
+<li><b>Captions</b> for videos on Edelman&rsquo;s channel: the list of caption tracks and the caption text of the track we use.</li>
+<li><b>Uploads</b>, only when a manager chooses to upload: the video file, and the title, description and visibility (public, unlisted or private) the manager sets.</li>
+</ul>
+<p>We do not access the channel&rsquo;s subscribers, comments, messages, analytics, revenue or any other Google account data.</p>
+<h3 class="lg-h3">How we use it</h3>
+<ul class="lg-list">
+<li>To fill in a training video&rsquo;s title.</li>
+<li>To turn captions into a transcript the manager reviews. The Hub then uses it to suggest a short description, study notes and quiz questions. The manager checks and edits these before employees see them.</li>
+<li>To upload training videos to Edelman&rsquo;s channel when a manager asks. Nothing is uploaded or changed on YouTube without a manager starting it.</li>
+<li>To play training videos in YouTube&rsquo;s embedded player.</li>
+</ul>
+<p>We use YouTube data only to provide these Training features. We do not use it for advertising, we do not sell it, and we do not use it to build profiles of people.</p>
+<h3 class="lg-h3">Who it is shared with</h3>
+<ul class="lg-list">
+<li><b>Our AI writing service.</b> Transcript text is sent to OpenRouter, which passes it to Anthropic&rsquo;s Claude model, only to write the description, study notes and questions. Under our settings these providers may not use it to train their models.</li>
+<li><b>Microsoft.</b> Training courses, including transcripts and video titles, are stored in Microsoft Dataverse, part of Microsoft Power Pages, which hosts the Hub.</li>
+<li><b>Our automation server.</b> Requests to YouTube run through n8n on a private server Edelman operates, hosted by Hostinger.</li>
+<li><b>Edelman employees</b> with access to Training see the finished training. Transcripts are visible to managers who edit training.</li>
+</ul>
+<p>We do not share YouTube data with anyone else, except where the law requires it.</p>
+<h3 class="lg-h3">How long we keep it</h3>
+<ul class="lg-list">
+<li><b>The Google sign-in token</b> is stored encrypted on our automation server and kept until the channel is disconnected. It is used only for the features above.</li>
+<li><b>Video titles and caption text</b> stored in the Hub are refreshed from YouTube or deleted at least every 30 days.</li>
+<li><b>Short-lived processing records</b> on our automation server are deleted automatically within 14 days.</li>
+</ul>
+<h3 class="lg-h3">How to revoke access or delete data</h3>
+<p>The channel owner can remove Edelman Hub&rsquo;s access at any time from the <a href="https://security.google.com/settings/security/permissions" target="_blank" rel="noopener noreferrer">Google security settings page<span class="visually-hidden"> (opens in a new tab)</span></a>, in addition to our own deletion process. To ask us to delete stored YouTube data, email <a href="mailto:website@edelmanteam.com">website@edelmanteam.com</a>. We delete it within 7 days of a request, and within 7 days after we find that access has been removed. Deleting data from the Hub does not delete anything on YouTube; to remove a video from YouTube, use YouTube Studio.</p>
+</section>
+
+<section class="lg-card" aria-labelledby="lgP5"><h2 class="lg-h2" id="lgP5">5. How we use information</h2>
+<ul class="lg-list">
+<li>To run the Hub: show your training, tools and forms, keep your progress and points, and route forms to the right people.</li>
+<li>To improve Edelman Chat answers and the Hub itself.</li>
+<li>To keep the Hub secure and meet legal and recordkeeping needs.</li>
+</ul>
+<p>We do not sell personal information, and we do not show ads in the Hub.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP6"><h2 class="lg-h2" id="lgP6">6. Who we share information with</h2>
+<p>Only service providers that help us run the Hub, and only what they need:</p>
+<ul class="lg-list">
+<li><b>Microsoft</b> (Microsoft 365 sign-in, Power Pages, Dataverse, SharePoint, Azure storage and search, and email).</li>
+<li><b>Our automation server</b> (n8n, hosted by Hostinger).</li>
+<li><b>Our AI services</b> (OpenRouter and Anthropic) for Edelman Chat and Training. Only the question or training text is sent, not your profile.</li>
+<li><b>Authorities</b>, when the law requires it.</li>
+</ul></section>
+
+<section class="lg-card" aria-labelledby="lgP7"><h2 class="lg-h2" id="lgP7">7. Cookies and your device</h2>
+<p>The Hub uses cookies that are needed to sign you in and keep your session secure. Some pages keep small settings in your browser, such as an unsent draft. Training videos play in YouTube&rsquo;s embedded player, and YouTube may set its own cookies and collect information as described in the <a href="https://www.google.com/policies/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy<span class="visually-hidden"> (opens in a new tab)</span></a>. We do not use advertising cookies, and we do not let other companies show ads in the Hub.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP8"><h2 class="lg-h2" id="lgP8">8. Keeping and deleting information</h2>
+<p>We keep employee information only as long as Edelman needs it for business and legal records, then delete it. YouTube data follows the shorter limits in section 4.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP9"><h2 class="lg-h2" id="lgP9">9. Security</h2>
+<ul class="lg-list">
+<li>All traffic is encrypted (HTTPS).</li>
+<li>Only signed-in Edelman accounts can use the Hub, and features are limited by role.</li>
+<li>Passwords, keys and sign-in tokens are stored encrypted and limited to the people who run the Hub.</li>
+</ul>
+<p>No system is perfectly secure, but we work to protect information and fix problems quickly.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP10"><h2 class="lg-h2" id="lgP10">10. Your choices</h2>
+<p>Employees can ask to see or correct their Hub information by contacting us (section 13). The YouTube channel owner can revoke access as described in section 4.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP11"><h2 class="lg-h2" id="lgP11">11. Children</h2>
+<p>Edelman Hub is for Edelman employees. It is not directed to children, and we do not knowingly collect information from children.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP12"><h2 class="lg-h2" id="lgP12">12. Changes to this policy</h2>
+<p>We will update this page and its effective date when our practices change, and let employees know on the Hub. If we change how we use Google or YouTube data, we will ask the channel administrator to approve the change first.</p></section>
+
+<section class="lg-card" aria-labelledby="lgP13"><h2 class="lg-h2" id="lgP13">13. Contact us</h2>
+<p>Questions or concerns about this policy or how Edelman Hub handles data:</p><address class="lg-address"><b>Edelman, LLC</b><br>300 S Calhoun Street, Fairbury, IL 61739<br>Email: <a href="mailto:website@edelmanteam.com">website@edelmanteam.com</a><br>Phone: (309) 240-6131</address></section>
+
+<footer class="lg-foot"><span>&copy; 2026 Edelman, LLC</span><nav aria-label="Edelman Hub policies"><a href="/">About Edelman Hub</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a><a href="https://www.edelmanteam.com/privacy-policy" target="_blank" rel="noopener noreferrer">Customer privacy policy<span class="visually-hidden"> (opens in a new tab)</span></a></nav></footer>
+</div>
+</main>
+<script>
+// ==========================================================================
+// Edelman Hub — legal pages (3 of 3: script). Same file on About, Privacy and Terms.
+// Optional: after a "Contents" link is used, move keyboard focus to that section.
+// Works signed out; calls nothing.
+// ==========================================================================
+(function () {
+  function start() {
+    var root = document.getElementById('ehLegalPage');
+    if (!root) return;
+    root.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+      if (!a) return;
+      var id = a.getAttribute('href').slice(1), h = id && document.getElementById(id);
+      if (!h) return;
+      if (!h.hasAttribute('tabindex')) h.setAttribute('tabindex', '-1');
+      setTimeout(function () { try { h.focus({ preventScroll: true }); } catch (x) { h.focus(); } }, 0);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edelman Hub | Edelman, LLC</title>
+<meta name="description" content="The private home base for the Edelman team: training, company tools, forms and answers in one place.">
+<link rel="canonical" href="https://about.edelmanhub.com/">
+<style>
+/* ==========================================================================
+   Edelman Hub — legal pages: About, Privacy Policy, Terms (2 of 3: styles)
+   Same file on all three pages. Scoped under #ehLegalPage.
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&display=swap");
+html, body { margin: 0; background: #F5F3EE; }
+#ehLegalPage {
+  --ink: #1C1B19; --char: #2B2A27; --char-2: #36342F; --line-dark: #4A4740;
+  --stone: #F5F3EE; --card: #FFFFFF; --line: #E7E3DA; --muted: #6B665E;
+  --on-dark: #FFFFFF; --on-dark-2: #D8D4CB; --yellow: #FFF200; --yellow-hover: #E6DA00;
+  max-width: 980px; margin: 0 auto; padding: 32px 32px 64px;
+  display: flex; flex-direction: column; gap: 18px;
+  font-family: "Lato", Arial, sans-serif; color: #2E2C29; font-size: 16px; line-height: 1.65;
+}
+#ehLegalPage *, #ehLegalPage *::before, #ehLegalPage *::after { box-sizing: border-box; }
+#ehLegalPage h1, #ehLegalPage h2, #ehLegalPage h3, #ehLegalPage p, #ehLegalPage ul { margin: 0; }
+#ehLegalPage .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+#ehLegalPage a { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+#ehLegalPage a:hover { color: #000000; }
+#ehLegalPage a:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; border-radius: 4px; }
+/* Title band */
+#ehLegalPage .lg-head { background: var(--char); border-radius: 16px; padding: 28px 30px; }
+#ehLegalPage .lg-eyebrow { font-size: 13px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--yellow); }
+#ehLegalPage .lg-title { margin-top: 6px; font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif; font-weight: 400; font-size: 56px; line-height: 1; letter-spacing: 1px; color: var(--on-dark); }
+#ehLegalPage .lg-sub { margin-top: 10px; font-size: 17px; line-height: 1.5; color: var(--on-dark-2); max-width: 720px; }
+#ehLegalPage .lg-divider { margin-top: 16px; width: 72px; height: 4px; border-radius: 2px; background: var(--yellow); }
+/* Contents */
+#ehLegalPage .lg-toc { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 22px; }
+#ehLegalPage .lg-toc-title { font-size: 12px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+#ehLegalPage .lg-toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 32px; }
+#ehLegalPage .lg-toc li { break-inside: avoid; padding: 3px 0; }
+#ehLegalPage .lg-toc a { font-weight: 700; }
+/* Cards */
+#ehLegalPage .lg-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px 26px; display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 90px; }
+#ehLegalPage .lg-h2 { font-family: "Bebas Neue", "Arial Narrow", Arial, sans-serif; font-weight: 400; font-size: 30px; line-height: 1.05; letter-spacing: 1px; color: var(--ink); }
+#ehLegalPage .lg-h3 { margin-top: 6px; font-size: 16px; font-weight: 900; color: var(--ink); }
+#ehLegalPage .lg-list { padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+#ehLegalPage .lg-list b, #ehLegalPage .lg-card p b { color: var(--ink); }
+#ehLegalPage .lg-address { font-style: normal; line-height: 1.6; }
+/* The YouTube / Google section stands out (dark card) */
+#ehLegalPage .lg-card-dark { background: var(--char); border-color: var(--char); color: var(--on-dark-2); }
+#ehLegalPage .lg-card-dark .lg-h2, #ehLegalPage .lg-card-dark .lg-h3, #ehLegalPage .lg-card-dark b { color: var(--on-dark); }
+#ehLegalPage .lg-card-dark a { color: var(--yellow); }
+#ehLegalPage .lg-card-dark a:hover { color: var(--yellow-hover); }
+#ehLegalPage .lg-card-dark a:focus-visible { outline-color: var(--yellow); }
+/* Buttons (light cards only: no yellow here) */
+#ehLegalPage .lg-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+#ehLegalPage .lg-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border-radius: 12px; font-weight: 900; font-size: 15px; text-decoration: none; }
+#ehLegalPage .lg-btn-dark { background: var(--ink); color: #FFFFFF; }
+#ehLegalPage .lg-btn-dark:hover { background: var(--char); color: #FFFFFF; }
+#ehLegalPage .lg-btn-line { background: var(--card); color: var(--ink); border: 1.5px solid var(--ink); }
+#ehLegalPage .lg-btn-line:hover { background: var(--stone); color: var(--ink); }
+/* Footer */
+#ehLegalPage .lg-foot { margin-top: 6px; padding: 18px 4px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; font-size: 14px; color: var(--muted); }
+#ehLegalPage .lg-foot nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+@media (max-width: 767px) {
+  #ehLegalPage { padding: 16px 14px 48px; gap: 14px; font-size: 16px; }
+  #ehLegalPage .lg-head { padding: 20px; }
+  #ehLegalPage .lg-title { font-size: 42px; }
+  #ehLegalPage .lg-card { padding: 18px; }
+  #ehLegalPage .lg-h2 { font-size: 26px; }
+  #ehLegalPage .lg-toc ol { columns: 1; }
+  #ehLegalPage .lg-btn { width: 100%; }
+}
+@media print {
+  #ehLegalPage .lg-card-dark { background: #FFFFFF; color: #2E2C29; border-color: #CCCCCC; }
+  #ehLegalPage .lg-card-dark .lg-h2, #ehLegalPage .lg-card-dark .lg-h3, #ehLegalPage .lg-card-dark b, #ehLegalPage .lg-card-dark a { color: #000000; }
+}
+
+</style>
+</head>
+<body>
+<main>
+<div id="ehLegalPage" class="eh-main">
+<header class="lg-head"><p class="lg-eyebrow">Edelman, LLC</p><h1 class="lg-title">Edelman Hub</h1><p class="lg-sub">The private home base for the Edelman team: training, company tools, forms and answers in one place.</p><div class="lg-divider" aria-hidden="true"></div></header>
+
+
+<section class="lg-card" aria-labelledby="lgWhat">
+  <h2 class="lg-h2" id="lgWhat">What Edelman Hub is</h2>
+  <p>Edelman Hub (www.edelmanhub.com) is a private website run by Edelman, LLC (doing business as Edelman Heating, Cooling, Plumbing, Electric and Solar), a home services company in central Illinois and southern Wisconsin. It is built for Edelman employees, who sign in with their Edelman Microsoft 365 work accounts. It is not open to the public.</p>
+</section>
+<section class="lg-card" aria-labelledby="lgDoes">
+  <h2 class="lg-h2" id="lgDoes">What it does</h2>
+  <ul class="lg-list">
+    <li><b>Training.</b> Short training videos and courses, study notes and quizzes. Employees earn points for passing training and can track their progress.</li>
+    <li><b>Edelman Chat.</b> An assistant that answers work questions from Edelman&rsquo;s own documents.</li>
+    <li><b>Library and Company Forms.</b> Company documents and every company form in one place.</li>
+    <li><b>Home tools.</b> Links to the tools each team uses every day.</li>
+    <li><b>Website Management.</b> Where managers add training, home page news and forms.</li>
+  </ul>
+</section>
+<section class="lg-card lg-card-dark" aria-labelledby="lgYt">
+  <h2 class="lg-h2" id="lgYt">How Edelman Hub uses YouTube</h2>
+  <p>Edelman Hub uses YouTube API Services, only with Edelman&rsquo;s own YouTube channel:</p>
+  <ul class="lg-list">
+    <li><b>Playing training videos.</b> Training videos play in YouTube&rsquo;s embedded player on the Training page.</li>
+    <li><b>Preparing training.</b> When a manager adds a video from Edelman&rsquo;s channel, the Hub reads that video&rsquo;s title and captions. The captions become a transcript the manager reviews, and the Hub uses it to suggest a short description, study notes and quiz questions. The manager checks and edits everything before employees see it.</li>
+    <li><b>Uploading training videos.</b> A manager can upload a training video to Edelman&rsquo;s channel from the Hub. The manager sets the title, description and visibility (public, unlisted or private) before anything is sent to YouTube.</li>
+  </ul>
+  <p>An Edelman administrator connects the channel once with Google sign-in. Employees never sign in with Google, and the Hub never sees anyone&rsquo;s Google password. Using these features means agreeing to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service<span class="visually-hidden"> (opens in a new tab)</span></a>. Google&rsquo;s handling of data is covered by the <a href="https://www.google.com/policies/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+</section>
+<section class="lg-card" aria-labelledby="lgLinks">
+  <h2 class="lg-h2" id="lgLinks">Policies and contact</h2>
+  <div class="lg-actions">
+    <a class="lg-btn lg-btn-dark" href="/privacy/">Edelman Hub Privacy Policy</a>
+    <a class="lg-btn lg-btn-line" href="/terms/">Edelman Hub Terms of Use</a>
+  </div>
+  <p>Questions about Edelman Hub or how it handles data:</p>
+  <address class="lg-address"><b>Edelman, LLC</b><br>300 S Calhoun Street, Fairbury, IL 61739<br>Email: <a href="mailto:website@edelmanteam.com">website@edelmanteam.com</a><br>Phone: (309) 240-6131</address>
+</section>
+
+<footer class="lg-foot"><span>&copy; 2026 Edelman, LLC</span><nav aria-label="Edelman Hub policies"><a href="/">About Edelman Hub</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Use</a><a href="https://www.edelmanteam.com/privacy-policy" target="_blank" rel="noopener noreferrer">Customer privacy policy<span class="visually-hidden"> (opens in a new tab)</span></a></nav></footer>
+</div>
+</main>
+<script>
+// ==========================================================================
+// Edelman Hub — legal pages (3 of 3: script). Same file on About, Privacy and Terms.
+// Optional: after a "Contents" link is used, move keyboard focus to that section.
+// Works signed out; calls nothing.
+// ==========================================================================
+(function () {
+  function start() {
+    var root = document.getElementById('ehLegalPage');
+    if (!root) return;
+    root.addEventListener('click', function (e) {
+      var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+      if (!a) return;
+      var id = a.getAttribute('href').slice(1), h = id && document.getElementById(id);
+      if (!h) return;
+      if (!h.hasAttribute('tabindex')) h.setAttribute('tabindex', '-1');
+      setTimeout(function () { try { h.focus({ preventScroll: true }); } catch (x) { h.focus(); } }, 0);
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
+</body>
+</html>
