@@ -52,6 +52,11 @@ html, body { margin: 0; background: #F5F3EE; }
 #ehLegalPage .lg-card-dark a { color: var(--yellow); }
 #ehLegalPage .lg-card-dark a:hover { color: var(--yellow-hover); }
 #ehLegalPage .lg-card-dark a:focus-visible { outline-color: var(--yellow); }
+/* Official YouTube logo next to the YouTube feature (file from YouTube's brand site; not altered) */
+#ehLegalPage .lg-yt-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
+#ehLegalPage .lg-yt-logo { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+#ehLegalPage .lg-yt-logo img { display: block; height: 24px; width: auto; }
+#ehLegalPage .lg-yt-logo:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
 /* Buttons (light cards only: no yellow here) */
 #ehLegalPage .lg-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 #ehLegalPage .lg-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border-radius: 12px; font-weight: 900; font-size: 15px; text-decoration: none; }
@@ -106,7 +111,7 @@ html, body { margin: 0; background: #F5F3EE; }
 <ul class="lg-list">
 <li><b>Video details</b> for videos a manager adds to training: the video ID, title and channel name.</li>
 <li><b>Captions</b> for videos on Edelman&rsquo;s channel: the list of caption tracks and the caption text of the track we use.</li>
-<li><b>Uploads</b>, only when a manager chooses to upload: the video file, and the title, description and visibility (public, unlisted or private) the manager sets.</li>
+<li><b>Uploads</b>, only when a manager chooses to upload: the video file, and the title, description, visibility (public, unlisted or private) and audience (made for kids or not) the manager sets. The file goes straight from the manager&rsquo;s browser to YouTube; the Hub doesn&rsquo;t keep a copy.</li>
 </ul>
 <p>We do not access the channel&rsquo;s subscribers, comments, messages, analytics, revenue or any other Google account data.</p>
 <h3 class="lg-h3">How we use it</h3>
@@ -122,13 +127,14 @@ html, body { margin: 0; background: #F5F3EE; }
 <li><b>Our AI writing service.</b> Transcript text is sent to OpenRouter, which passes it to Anthropic&rsquo;s Claude model, only to write the description, study notes and questions. Under our settings these providers may not use it to train their models.</li>
 <li><b>Microsoft.</b> Training courses, including transcripts and video titles, are stored in Microsoft Dataverse, part of Microsoft Power Pages, which hosts the Hub.</li>
 <li><b>Our automation server.</b> Requests to YouTube run through n8n on a private server Edelman operates, hosted by Hostinger.</li>
-<li><b>Edelman employees</b> with access to Training see the finished training. Transcripts are visible to managers who edit training.</li>
+<li><b>Edelman employees</b> who can open Training see the training content, including transcripts. Only managers can change it.</li>
 </ul>
 <p>We do not share YouTube data with anyone else, except where the law requires it.</p>
 <h3 class="lg-h3">How long we keep it</h3>
 <ul class="lg-list">
 <li><b>The Google sign-in token</b> is stored encrypted on our automation server and kept until the channel is disconnected. It is used only for the features above.</li>
-<li><b>Video titles and caption text</b> stored in the Hub are refreshed from YouTube or deleted at least every 30 days.</li>
+<li><b>Caption text</b> read from YouTube is deleted from the Hub within 30 days. A manager can read it again from YouTube when needed.</li>
+<li><b>Video titles</b> read from YouTube are refreshed from YouTube at least every 30 days, or removed if the video is no longer available. Titles a manager types are the manager&rsquo;s own.</li>
 <li><b>Short-lived processing records</b> on our automation server are deleted automatically within 14 days.</li>
 </ul>
 <h3 class="lg-h3">How to revoke access or delete data</h3>
