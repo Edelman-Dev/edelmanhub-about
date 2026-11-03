@@ -52,6 +52,11 @@ html, body { margin: 0; background: #F5F3EE; }
 #ehLegalPage .lg-card-dark a { color: var(--yellow); }
 #ehLegalPage .lg-card-dark a:hover { color: var(--yellow-hover); }
 #ehLegalPage .lg-card-dark a:focus-visible { outline-color: var(--yellow); }
+/* Official YouTube logo next to the YouTube feature (file from YouTube's brand site; not altered) */
+#ehLegalPage .lg-yt-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
+#ehLegalPage .lg-yt-logo { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; }
+#ehLegalPage .lg-yt-logo img { display: block; height: 24px; width: auto; }
+#ehLegalPage .lg-yt-logo:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
 /* Buttons (light cards only: no yellow here) */
 #ehLegalPage .lg-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 #ehLegalPage .lg-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 18px; border-radius: 12px; font-weight: 900; font-size: 15px; text-decoration: none; }
@@ -99,7 +104,10 @@ html, body { margin: 0; background: #F5F3EE; }
   </ul>
 </section>
 <section class="lg-card lg-card-dark" aria-labelledby="lgYt">
-  <h2 class="lg-h2" id="lgYt">How Edelman Hub uses YouTube</h2>
+  <div class="lg-yt-row">
+    <h2 class="lg-h2" id="lgYt">How Edelman Hub uses YouTube</h2>
+    <a class="lg-yt-logo" href="https://www.youtube.com/@EdelmanTeam" target="_blank" rel="noopener noreferrer"><img src="/assets/youtube-logo.png" alt="YouTube" height="24"><span class="visually-hidden"> Edelman on YouTube (opens in a new tab)</span></a>
+  </div>
   <p>Edelman Hub uses YouTube API Services, only with Edelman&rsquo;s own YouTube channel:</p>
   <ul class="lg-list">
     <li><b>Playing training videos.</b> Training videos play in YouTube&rsquo;s embedded player on the Training page.</li>
@@ -107,6 +115,7 @@ html, body { margin: 0; background: #F5F3EE; }
     <li><b>Uploading training videos.</b> A manager can upload a training video to Edelman&rsquo;s channel from the Hub. The manager sets the title, description and visibility (public, unlisted or private) before anything is sent to YouTube.</li>
   </ul>
   <p>An Edelman administrator connects the channel once with Google sign-in. Employees never sign in with Google, and the Hub never sees anyone&rsquo;s Google password. Using these features means agreeing to the <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener noreferrer">YouTube Terms of Service<span class="visually-hidden"> (opens in a new tab)</span></a>. Google&rsquo;s handling of data is covered by the <a href="https://www.google.com/policies/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+  <p>How we access, use, store, share and delete YouTube data: <a href="/privacy/">Edelman Hub Privacy Policy</a>.</p>
 </section>
 <section class="lg-card" aria-labelledby="lgLinks">
   <h2 class="lg-h2" id="lgLinks">Policies and contact</h2>
